@@ -1,0 +1,8 @@
+RPC_DECLARE(__add_cid,RPC_RET(RPC_RET_PTR(int retour)), RPC_ARG(RPC_ARG_VAL(int arg0))){
+  retour = arg0+current_cid;
+  printk(INFO,"allo : %d\n",retour);
+}
+
+RPC_DECLARE(__add_gid,RPC_RET(RPC_RET_PTR(int retour)), RPC_ARG(RPC_ARG_VAL(int arg0))){
+  retour = arg0+current_cpu;
+}
